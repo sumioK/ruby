@@ -55,3 +55,31 @@
 # volume = x * y * z
 # print "表面積=", area,"\n"
 # print "体積=", volume, "\n"
+
+# a= 20
+# if a >10
+#     puts "greater"
+# else
+#     puts "smaller"
+# end
+
+# i= 1
+# while i<=10
+#     puts i
+#     i += 1
+# end
+
+# 100.times do
+#     puts "one hundred"
+# end
+
+# names = ["小林", "林", "高野", "盛岡"]
+# names[0]= "柳田"
+# print "最初の名前は#{names[0]}です。\n"
+
+# num =[3, 1, 4, 1, 5, 9, 2, 6, 5 ]
+# mixed =[1,"歌", 2,"風",3]
+# puts num
+# puts mixed
+# puts num.size
+# puts mixed.size
