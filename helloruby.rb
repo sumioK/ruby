@@ -83,3 +83,20 @@
 # puts mixed
 # puts num.size
 # puts mixed.size
+
+# names= ["小林", "林", "高野", "森岡"]
+# puts names.size
+# puts names.length
+
+# names.each do |n|
+#     puts n
+# end
+
+# address = {name:"高橋", furigana:"たかはし", postal:"1234567"}
+
+# puts address[:name]
+
+# address.each do |key, value|
+#     puts "#{key}:#{value}"
+# end
+
