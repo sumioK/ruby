@@ -100,3 +100,7 @@
 #     puts "#{key}:#{value}"
 # end
 
+puts /Ruby/ =~ "Yet Another Ruby Hacker"
+puts /Ruby/ =~ "Ruby"
+puts /Ruby/ =~ "Diamond"
+puts /Ruby/i =~ "yet rnother ruby hacker"
