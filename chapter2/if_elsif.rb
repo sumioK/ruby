@@ -8,6 +8,6 @@
 #     puts "aはbと同じ"
 # end
 
-a = 10
-b = 20
-puts "aはbよりも小さい" if a < b
+# a = 10
+# b = 20
+# puts "aはbよりも小さい" if a < b
