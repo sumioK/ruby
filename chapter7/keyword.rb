@@ -38,14 +38,33 @@
 # p args1
 # p area(**args1)
 
-def foo(a, b, c)
-    a + b + c
+
+# def foo(a, b, c)
+#     a + b + c
+# end
+
+# p foo(1, 2, 3)
+
+# args1 = [2, 3]
+# p foo(1, *args1)
+
+# args2 = [1, 2, 3]
+# p foo(*args2)
+
+
+# def foo(arg)
+#     arg
+# end
+
+# p foo({"a"=>1, "b"=>2})
+# p foo("a"=>1, "b"=>2)
+# p foo(a: 1, b: 2)
+
+
+def bar(arg1, arg2)
+    [arg1, arg2]
 end
 
-p foo(1, 2, 3)
-
-args1 = [2, 3]
-p foo(1, *args1)
-
-args2 = [1, 2, 3]
-p foo(*args2)
+p bar(100, {"a"=>1, "b"=>2})
+p bar(100, "a"=>1, "b"=>2)
+p bar(100, a: 1, b: 2)
