@@ -17,5 +17,9 @@ end
 p0 = Point.new
 p1 = Point.new(1.0, 2.0)
 
+# p [ p0.x, p0.y]
+# p [ p1.x, p1.y]
+
+p0.swap(p1)
 p [ p0.x, p0.y]
 p [ p1.x, p1.y]
