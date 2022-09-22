@@ -22,3 +22,6 @@ end
 
     p point0
     p point1
+
+    p point0 + point1
+    p point0 - point1
