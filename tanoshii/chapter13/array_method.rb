@@ -29,3 +29,60 @@ p a
 a.compact!
 p a
 
+# a.delete(x) arrayからxを削除する
+a = [1, 2, 3, 2, 1]
+a.delete(2)
+
+p a
+
+# a.delete_at(n) array(n)の要素を取り除く
+a = [1, 2, 3, 4, 5]
+a.delete_at(2)
+p a
+
+# a.delete_if {|item|...}ブロックを実行した結果がtrueだった場合、aからitemを削除
+a = [1, 2, 3, 4, 5]
+a.delete_if {|i| i > 3}
+p a
+
+# a.slice!(n)　配列aから指定された部分を切り取り値を返す
+a = [1, 2, 3, 4, 5]
+p a.slice!(1,2)
+p a
+
+# a.uniq 配列aの重複する要素を排除する
+a = [1, 2, 3, 4, 5, 4, 3]
+p a
+p a.uniq
+
+# a.shift 先頭の要素を取り除く‘‘
+a = [1, 2, 3, 4, 5]
+p a.shift
+p a
+
+# a.pop 配列の末尾要素を取り除く
+a = [1, 2, 3, 4, 5]
+p a.pop
+p a
+
+# a.collect {|item|...} aの中の要素を置き換える
+a= [1, 2, 3, 4, 5]
+a.collect! {|item| item * 2 + 1}
+p a
+
+# a.fill(value, n..m) nからmまでの要素をvalueにする
+p [1, 2, 3, 4, 5].fill(0)
+p [1, 2, 3, 4, 5].fill(0, 2)
+p [1, 2, 3, 4, 5].fill(0, 2, 2)
+p [1, 2, 3, 4, 5].fill(0, 1..2)
+
+# a.flatten 入れ子になっている配列を展開する
+a = [1, [2, [3]], [4], 5]
+a.flatten!
+p a
+
+# a.reverse 配列aの要素を逆順にする
+a = [1, 2, 3, 4, 5]
+a.reverse!
+p a
+
