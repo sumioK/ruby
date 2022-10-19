@@ -99,4 +99,8 @@ a = a.select{|item| item % 2 == 0}
 a = a.reject{|item| item % 2 == 0}
       # 配列の中から条件に会わないものを取り出す
 
+# a.each{}
+result = 0
+a.each{|item| result += item}
+      # 配列の要素に対して繰り返し処理
 

@@ -31,3 +31,9 @@ aray3 = aray.reject{|item| item % 3 != 0}
 p aray3
 
 # 4 1の配列を逆順に並べ替える
+p aray.reverse
+
+# aの配列に含まれる要素の和
+result = 0
+aray.each{|i| result += i}
+  p result
