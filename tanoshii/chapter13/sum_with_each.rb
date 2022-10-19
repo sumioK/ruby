@@ -5,7 +5,7 @@ ary3 = [100, 200, 300, 400, 500]
 i = 0
 
 result = []
-while i <ary1.length
+while i < ary1.length
   result << ary1[i] + ary2[i] + ary3[i]
   i += 1
 end
