@@ -91,5 +91,12 @@ a = [1, 5, 4, 2, 3]
 a.sort!
 p a
 
-# a.sort_by {|i|...} 配列を並べ替える
+# a.select 
+a = a.select{|item| item % 2 == 0}
+      #配列aの中から 条件に合うものを取り出す
+
+# a.reject
+a = a.reject{|item| item % 2 == 0}
+      # 配列の中から条件に会わないものを取り出す
+
 
