@@ -46,3 +46,5 @@ while i < 101 do
   i += 1
 end
 print array6
+
+print array6.shift(10)
