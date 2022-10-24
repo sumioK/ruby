@@ -39,22 +39,37 @@
 #   p result
 
 # 1-100の配列から10ずつ取り出す
-i = 1
-array6 = []
-while i < 101 do
-  array6 << i
-  i += 1
+# i = 1
+# array6 = []
+# while i < 101 do
+#   array6 << i
+#   i += 1
+# end
+# print array6.shift(10)
+
+# array7 = []
+# i = 1
+
+# while i < 10
+#   array7 << array6.slice!(0..9)
+#   i += 1
+# end
+# print array7
+# print array7.length
+
+
+# 7
+
+def sum_array
+  nums1 = [1, 2, 3]
+  nums2 = [4, 6, 8]
+  result = []
+  i = 0
+  while i < nums1.length || i < nums2.length
+    result << nums1[i] + nums2[i]
+    return result
+    i += 1
+  end
 end
 
-
-print array6.shift(10)
-
-array7 = []
-i = 1
-
-while i < 10
-  array7 << array6.slice!(0..9)
-  i += 1
-end
-print array7
-print array7.length
+print sum_array
