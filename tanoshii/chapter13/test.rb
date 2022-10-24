@@ -53,7 +53,8 @@ array7 = []
 i = 1
 
 while i < 10
-  array7 << array6.slice!(1..10)
+  array7 << array6.slice!(0..9)
   i += 1
 end
 print array7
+print array7.length
