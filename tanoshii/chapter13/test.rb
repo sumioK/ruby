@@ -45,6 +45,15 @@ while i < 101 do
   array6 << i
   i += 1
 end
-print array6
+
 
 print array6.shift(10)
+
+array7 = []
+i = 1
+
+while i < 10
+  array7 << array6.slice!(1..10)
+  i += 1
+end
+print array7
