@@ -63,13 +63,13 @@
 def sum_array
   nums1 = [1, 2, 3]
   nums2 = [4, 6, 8]
-  result = []
+  result = 0
   i = 0
   while i < nums1.length || i < nums2.length
-    result << nums1[i] + nums2[i]
-    return result
+    result = result + nums1[i] + nums2[i]
     i += 1
   end
+  return result
 end
 
 print sum_array
