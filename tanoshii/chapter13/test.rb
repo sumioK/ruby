@@ -72,4 +72,4 @@ def sum_array
   return result
 end
 
-print sum_array
+print sum_arrayp 
