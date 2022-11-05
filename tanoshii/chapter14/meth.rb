@@ -25,3 +25,11 @@ p "heLlo, ruBY".capitalize
 p "あいうえお".tr("い", "イ")
 p "あいうえお".tr("あ-お", "ア-オ")
 
+# 文字列の並べ替え
+array = [400, 200, 100, 300]
+p array.sort
+
+# 大文字・小文字を区別しないソート
+a = ['a', 'b', 'c', 'd', 'e', 'A', 'B', 'C', 'D','E']
+p a.sort{|x, y| x.casecmp(y).nonzero? || x <=> y}
+p a.sort_by{|s| [s.downcase] } #downcaseで強制的に小文字にしてから比較をする
