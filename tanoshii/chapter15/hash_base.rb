@@ -80,3 +80,39 @@ p h.fetch("x", "undef")
 
 
 # あるオブジェクトをキーや値として持つかを調べる
+h = {"a" => "b", "c" => "d"}
+p h.key?("a")
+p h.has_key?("a")
+p h.include?("z")
+p h.member?("z")
+
+p h.has_value?("b")
+p h.value?("z")
+
+
+# ハッシュの大きさ（数）を調べる
+h = {"a" => "b", "c" => "d"}
+p h.length
+p h.size
+
+#大きさが０かどうかを調べる
+h = {"a" => "b", "c" => "d"}
+p h.empty?
+h2 = Hash.new
+p h2.empty?
+
+
+# キーと値を削除する
+h = {"R" => "Ruby"}
+p h["R"]
+h.delete("R")
+p h["R"]
+
+  # 条件を付けてキーを削除する
+    # delete_ifの場合あてはまるものがない場合にhashが返される
+h = {"R" => "Ruby", "P" => "Perl"}
+p h.delete_if {|key,value| key == "R"}
+    # reject!の場合、nilが返される
+h = {"R" => "Ruby", "P" => "Perl"}
+p h.delete_if {|key, value| key == "L"}
+p h.reject! {|key, value| key == "L"}
