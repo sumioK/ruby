@@ -13,6 +13,14 @@ p wday[:monday]
 p wday[:sunday]
 p wday[:saturday]
 
+# wday = {sunday => "日曜日",
+#         monday => "月曜日",
+#         tuesday => "火曜日",
+#         wednesday => "水曜日",
+#         thursday => "木曜日",
+#         friday => "金曜日",
+#         saturday => "土曜日"
+#         }
 
 # 2. ハッシュメソッドを使って１のペア数を数える
 p wday.length
