@@ -44,3 +44,39 @@ h = Hash.new
 h.store("R", "Ruby")
 p h.fetch("R", "(undef)")
 p h.fetch("N", "(undef)")
+
+
+# keyやvalueをまとめて返す。
+h = {"a" => "b", "c" => "d"}
+  # キーのみ取り出す
+p h.keys
+  # 値のみ取り出す
+p h.values
+  # キーと値を配列として取り出す
+p h.to_a
+
+
+# ハッシュにデフォルト値
+
+  # 生成時にデフォルトを設定する
+h = Hash.new(1)
+h["a"] = 10
+p h["a"] 
+p h["x"]
+p h["y"]
+  # ハッシュのデフォルト値を生成するブロックを指定する
+h = Hash.new do |hash, key|
+  hash[key] = key.upcase
+end
+h["a"] = "b"
+p h["a"]
+p h["b"]
+p h["x"]
+  # fetchで指定する
+h = Hash.new do |hash, key|
+  hash[key] = key.upcase
+end
+p h.fetch("x", "undef")
+
+
+# あるオブジェクトをキーや値として持つかを調べる
