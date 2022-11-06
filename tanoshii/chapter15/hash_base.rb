@@ -116,3 +116,32 @@ p h.delete_if {|key,value| key == "R"}
 h = {"R" => "Ruby", "P" => "Perl"}
 p h.delete_if {|key, value| key == "L"}
 p h.reject! {|key, value| key == "L"}
+
+
+# ハッシュを初期化する
+h = {"a" => "b", "c" => "d"}
+h.clear
+p h.size
+
+  # clearとnewの違い
+    # 1
+h = {"k1" => "v1"}
+g = h
+h.clear
+p g
+    # 2
+h = {"k1" => "v1"}
+g = h
+h = Hash.new
+p g
+
+
+# ハッシュの中のハッシュ
+table = {"A" =>{"a"=> "x", "b" => "y"},
+          "B" =>{"a" => "v", "b" => "w"}}
+p table["A"]["a"]
+p table["B"]["a"]
+
+
+# 二つのハッシュを合わせる merge
+p ({"a" => "x"}.merge({"b" => "y"}))
